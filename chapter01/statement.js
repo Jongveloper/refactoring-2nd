@@ -39,7 +39,7 @@ const statement =(invoice, plays) => {
     volumeCredits += Math.max(perf.audience - 30, 0);
       // 희극 관객 5명마다 추가 포인트를 제공한다.
     if ("comedy" === play.type) volumeCredits += Math.floor(perf.audience / 5);
-2
+
       // 청구 내역을 출력한다.
     result += ` ${play.name}: ${format(thisAmount/100)} (${perf.audience}석)\n`;
     totalAmount += thisAmount;
